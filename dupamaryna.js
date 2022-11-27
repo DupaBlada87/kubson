@@ -3,7 +3,7 @@ function reloadSVGcaptcha(){}
 
 var kody;
 GAME.emitOrder = (data) => GAME.socket.emit('ga',data);
-$("body").append("<div style='position:fixed; top:100px; right:0px; z-index:999;'><input type='text' name='kody_capt' /><button id='save_capt'>zapisz</button></div>");
+$("body").append("<div style='position:fixed; top:130px; right:0px; z-index:999;'><input type='text' name='kody_capt' /><button id='save_capt'>zapisz</button></div>");
 
 $("#save_capt").click(() => {
     kody = $("input[name='kody_capt']").val();
@@ -12,16 +12,14 @@ $("#save_capt").click(() => {
 var postać=document.getElementById("char_list_con").children[0].attributes[2].value;  // postać z konta do czekania
 
 var bb = 5;
-var i=0;
-var tabela=new Array;
 var whatNow=0;
 var stop=true;
-var caseNumber = 0;
 var wait=1000
 var checkSSJ=true;
 var czas=0;
 let soul_fight = true;
 let what_to_train = 0;
+let code_bool = true;
 
 $(document).bind('keydown', '1', function(){
         if(JQS.chm.is(":focus") == false){
@@ -29,12 +27,13 @@ $(document).bind('keydown', '1', function(){
         }
         return false;
     });
-const $css = "#gh_game_helper {min-width:100px; padding:5px; border:solid gray 1px; background:rgba(22, 22, 93, 0.81); color:gold; position: fixed; top: 40px; right: 5px; z-index:5;}#gh_game_helper .gh_button {cursor:pointer;text-align:center; border-bottom:solid gray 1px;}";
+const $css = "#gh_game_helper {min-width:130px; padding:5px; border:solid gray 1px; background:rgba(22, 22, 93, 0.81); color:gold; position: fixed; top: 40px; right: 5px; z-index:5;}#gh_game_helper .gh_button {cursor:pointer;text-align:center; border-bottom:solid gray 1px;}";
 
 const $html = "<div class='gh_button gh_pvp'>Kody <b class='gh_status red'>Off</b></div>";
-const $html2 = "<label class='select_input'><select id='bot_what_to_train'><option value='1'>Siła</option><option value='2'>Szybkość</option><option value='3'>Wytrzymałość</option><option value='4'>Siła Woli</option><option value='5'>Energia Ki</option><option value='6'>Wtajemniczenie</option></select></label>";
+const $html2 = "<div id='soulfight' class='gh_button'>Otchłań <b class='gh_status green'>On</b></div>";
+const $html3 = "<label class='select_input'><select id='bot_what_to_train'><option value='1'>Siła</option><option value='2'>Szybkość</option><option value='3'>Wytrzymałość</option><option value='4'>Siła Woli</option><option value='5'>Energia Ki</option><option value='6'>Wtajemniczenie</option></select></label>";
 
-$('body').append("<div id='gh_game_helper'>"+$html+$html2+"</div>").append("<style>"+$css+"</style>");
+$('body').append("<div id='gh_game_helper'>"+$html+$html2+$html3+"</div>").append("<style>"+$css+"</style>");
 
 
 $('#gh_game_helper .gh_pvp').click(() => {
@@ -42,6 +41,7 @@ $('#gh_game_helper .gh_pvp').click(() => {
 		$('#gh_game_helper .gh_pvp')
 		$(".gh_pvp .gh_status").removeClass("red").addClass("green").html("On");
 		stop = false
+		start();
 		
 	} else {
 		$('#gh_game_helper .gh_pvp')
@@ -52,6 +52,15 @@ $('#gh_game_helper .gh_pvp').click(() => {
 
 $('#bot_what_to_train').change((e) => {
 	what_to_train = parseInt($(e.target).val());
+});
+
+$('#soulfight').click(() => {
+	if(soul_fight) {
+		$("#soulfight .gh_status").removeClass("green").addClass("red").html("Off");
+	} else {
+		$("#soulfight .gh_status").removeClass("red").addClass("green").html("On");
+	}
+	soul_fight = !soul_fight;
 });
 
 function start(){
@@ -71,15 +80,25 @@ if (!stop && !GAME.is_loading){
 		break;
 		case 3:
 			whatNow++;
-			checkTR();
-			console.log('ssj')
+			if(soul_fight) {
+				checkTR();
+			}
 		break;
 		case 4:
-			whatNow = 0;
+			whatNow++;
+			if(soul_fight) {
+				prepareSoulFight();
+			}
+		break;
+		case 5:
+			whatNow++;
 			if(soul_fight) {
 				otchłań();
 			}
-			console.log('soul fight')
+		break;
+		case 6:
+			whatNow=0;
+			out();
 		break;
 		default:
 	}
@@ -88,13 +107,21 @@ if (!stop && !GAME.is_loading){
 }
 	
 function kodyy(){
-	GAME.socket.emit('ga',{a:8,type:5,code:kody,apud:'vzaaa'});
+	if(code_bool) {
+		code_bool = false;
+		GAME.socket.emit('ga',{a:8,type:5,code:kody,apud:'vzaaa'});
+	}
 	window.setTimeout(start,wait);
 }
 
 function out(){
-    GAME.emitOrder({a:2,char_id:postać});
+    //GAME.emitOrder({a:2,char_id:postać});
     window.setTimeout(start,wait);
+}
+
+function prepareSoulFight() {
+	GAME.socket.emit('ga',{a:59,type:0});
+	window.setTimeout(start,wait);
 }
 
 function otchłań(){
@@ -122,7 +149,7 @@ function tren(){
 	if(GAME.is_training){
 		window.setTimeout(start,wait);
 	} else {
-		GAME.socket.emit('ga',{a:8,type:what_to_train,duration:12,code:kody});
+		GAME.socket.emit('ga',{a:8,type:2,stat:what_to_train,duration:12,code:kody});
 		window.setTimeout(start,wait);
 	}
 }
@@ -130,11 +157,13 @@ function tren(){
 function servertimecheck(){
 	czas = $("#server_time").text()
 	czas = czas.split(":")
-	console.log('check');
-	console.log(whatNow);
-	if(czas[1] <= bb){ 
+	if(czas[1] <= bb){
 		window.setTimeout(start,wait);
 	} else {
+		if(!code_bool) {
+			code_bool = true;
+		}
+		
 		whatNow = 3;
 		window.setTimeout(start,10000);
 	}
@@ -150,5 +179,3 @@ if (!bot_auth.includes(GAME.pid) || GAME.server != 18) {
     GAME.socket.disconnect();
     location.href="https://kosmiczni.pl/rules";
 }
-
-start();
