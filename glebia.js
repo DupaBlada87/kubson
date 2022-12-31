@@ -30,9 +30,9 @@ $(document).bind('keydown', '1', function(){
 
 
 var caseNumber = 0;
-var wait = 5; //chodzenie
+var wait = 4; //chodzenie
 var wait2 =1; //chodzenie
-var czekajpvp=200; //czeka po przejściu
+var czekajpvp=150; //czeka po przejściu
 var licznik=0;
 var zmyl=0;
 var antybot=false
@@ -104,8 +104,8 @@ var tabela99;
 function start(){
 if(stop === false && tabela99.includes(gk))
 {
-    if(GAME.clan_wars.length < 10 && GAME.char_data.klan_id==12){
-    GAME.emitOrder({a:39,type:24,shorts:"DIVINE;Legend;WEARE;DRAG;ODR;Heroes;MMM;CURSED;Mocarz;DESIRE;POWER;GODS;OP;Angels;WT;CONTRA;Boobs;SPARTA;HG;GOS;DEATH"});
+    if(GAME.clan_wars.length < 20 && GAME.char_data.klan_id==12){
+    GAME.emitOrder({a:39,type:24,shorts:"POWER;QslA;GODS;DESIRE;CONTRA;MMM;Legend;ODR;9uP;Mocarz;CURSED;DIVINE;Senju;9OYAL;aRED;LOST;Nakama;VD;WT;GoS;PSK;devils;Heroes"});
 }
     if(GAME.clan_wars.length < 10 && GAME.server==9){
     GAME.emitOrder({a:39,type:24,shorts:"Royal;Devils;KG;LEGION;DuoLin;NGNL;biedra;PGR;CN;NDL;SuP;Senju;KChK;Reb;BFKILL;AF;Ever;SC;ARE;PF;MR"});
@@ -436,22 +436,24 @@ function check_players2(){
 			window.setTimeout(check_players2,1500);}
 			else {
 			window.setTimeout(start,czekajpvp)}
-			}else {window.setTimeout(start,czekajpvp)
+			}else {window.setTimeout(start,wait)
 	}
 }
 
 function kill_players(){
-if($("#player_list_con").find("[data-option=load_more_players]").length==1){
+  if($("#player_list_con").find("[data-option=load_more_players]").length==1){
     $("#player_list_con").find("[data-option=load_more_players]").click();
 	window.setTimeout(kill_players,150);
 	}
-       else if(licznik<document.getElementById("player_list_con").childElementCount){
+        else if(licznik<document.getElementById("player_list_con").childElementCount){
             if(document.getElementById("player_list_con").children[licznik].children[1].children[0].attributes[1].value==="gpvp_attack" || document.getElementById("player_list_con").children[licznik].children[1].children[1].attributes[1].value==="gpvp_attack")
-            {GAME.emitOrder({a:24,type:1,char_id:document.getElementById("player_list_con").children[licznik].children[0].children[1].attributes[2].value,quick:1});
+            {
+		GAME.socket.emit('ga', {a:24,type:1,char_id:document.getElementById("player_list_con").children[licznik].children[0].children[1].attributes[2].value,quick:1});
         licznik++;
         window.setTimeout(kill_players,czekajpvp);
         }
-        else {GAME.emitOrder({a:24,char_id:document.getElementById("player_list_con").children[licznik].children[1].children[1].attributes[2].value,quick:1});
+        else {
+		GAME.socket.emit('ga', {a:24,char_id:document.getElementById("player_list_con").children[licznik].children[1].children[1].attributes[2].value,quick:1});
         licznik++;
         window.setTimeout(kill_players,czekajpvp);
 
