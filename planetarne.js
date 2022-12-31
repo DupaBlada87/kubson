@@ -60,9 +60,9 @@ $(document).bind('keydown', '1', function(){
     });
 
 var caseNumber = 0;
-var wait = 6; //chodzenie
+var wait = 8; //chodzenie
 var wait2 =1; //chodzenie
-var czekajpvp=220; //czeka po przejściu
+var czekajpvp=200; //czeka po przejściu
 var licznik=0;
 var antybot=false
 var stop = true;
@@ -113,11 +113,14 @@ var tabela99;
 function start(){
 	if(stop === false && tabela99.includes(gk))
 	{
-		 if(parseInt($('#clan_war_cnt').text()) < 6 && GAME.server==16){
-				GAME.emitOrder({a:39,type:24,shorts:"TAKA;HCM;ccc;LALA;AFK;LOL"});
+		 if(parseInt($('#clan_war_cnt').text()) < 4 && GAME.server==16){
+				GAME.emitOrder({a:39,type:24,shorts:"TAKA;LALA;AFK;LOL"});
 			}
-			 if(parseInt($('#clan_war_cnt').text()) < 3 && GAME.server==18){
-				GAME.emitOrder({a:39,type:24,shorts:"lego;Domin;las;sal"});
+			if(parseInt($('#clan_war_cnt').text()) < 8 && GAME.server==17){
+				GAME.emitOrder({a:39,type:24,shorts:"ABCA;BTL;SSJ;FaH;Super;ESP;DEST;NAS;SDS"});
+			}
+			 if(parseInt($('#clan_war_cnt').text()) < 5 && GAME.server==18){
+				GAME.emitOrder({a:39,type:24,shorts:"lego;Domin;las;jad;sal"});
 			}
 	 if(parseInt($('#clan_war_cnt').text()) < 25 && GAME.server==1 && GAME.char_data.klan_id==3542 ||  parseInt($('#clan_war_cnt').text()) < 20 && GAME.server==1 && GAME.char_data.klan_id==3434){
     GAME.emitOrder({a:39,type:24,shorts:"fdsfsd;DK;PAKT;ZONG;DEMON;DOME;Legend;FRSPG;Saiyan;UVM;Ramizb;DARK;Shadow;MoOEn;MWars;LWDB;GM;Soul;JSKA;Say;Ssc;ZSCH;BDS;gimme;SSJL;SDS;CORP;PT;ROYALE;LEGION;BSS;BTK;WBB;LORDS;KNIGHT;LSSJ;BHD;ABCDEG;SzMR;GSayan;SKS"});
@@ -125,8 +128,8 @@ function start(){
 			 if(parseInt($('#clan_war_cnt').text()) < 20 && GAME.server==1 && GAME.char_data.klan_id==25617){
     GAME.emitOrder({a:39,type:24,shorts:"fdsfsd;DK;PAKT;ZONG;DEMON;DOME;FRSPG;Saiyan;UVM;Ramizb;DARK;Shadow;MoOEn;MWars;LWDB;GM;Soul;JSKA;Say;Ssc;ZSCH;BDS;gimme;SSJL"});
 			}
-			if(parseInt($('#clan_war_cnt').text()) < 10 && GAME.char_data.klan_id==12){
-				GAME.emitOrder({a:39,type:24,shorts:"Angels;6DW;HG;Ziomki;DIVINE;DT;NGNL;SPARTA;CHLEB;OW"});
+			if(parseInt($('#clan_war_cnt').text()) < 20 && GAME.char_data.klan_id==12){
+				GAME.emitOrder({a:39,type:24,shorts:"kal;punk;len;lgbt;sofa;STAR;cyc;Angels;ROYAL;KNIGHT;6DW;DIVINE;DT;SPARTA;CHLEB;Error;LF;9L;9DL;8BO;Kaeru"});
 			}
 		if(parseInt($('#clan_war_cnt').text()) < 7 && GAME.char_data.klan_id==6){
 				GAME.emitOrder({a:39,type:24,shorts:"cyc;kal;sofa;lgbt;len;punk;star"});
@@ -305,30 +308,15 @@ function check_players2(){
 }
 
 function kill_players(){
-  if($("#player_list_con").find("[data-option=load_more_players]").length==1){
+	licznikkk=0;
+	if($("#player_list_con").find("[data-option=load_more_players]").length==1){
     $("#player_list_con").find("[data-option=load_more_players]").click();
 	window.setTimeout(kill_players,150);
+	} else {
+	var ll=document.getElementById("player_list_con").childElementCount
+   kill_players1();
+   window.setTimeout(start,czekajpvp*ll)
 	}
-    else if(licznik==15){
-    window.setTimeout(start,wait);
-    licznik=0;}
-        else if(licznik<document.getElementById("player_list_con").childElementCount){
-            if(document.getElementById("player_list_con").children[licznik].children[1].children[0].attributes[1].value==="gpvp_attack" || document.getElementById("player_list_con").children[licznik].children[1].children[1].attributes[1].value==="gpvp_attack")
-            {
-		GAME.socket.emit('ga', {a:24,type:1,char_id:document.getElementById("player_list_con").children[licznik].children[0].children[1].attributes[2].value,quick:1});
-        licznik++;
-        window.setTimeout(kill_players,czekajpvp);
-        }
-        else {
-		GAME.socket.emit('ga', {a:24,char_id:document.getElementById("player_list_con").children[licznik].children[1].children[1].attributes[2].value,quick:1});
-        licznik++;
-        window.setTimeout(kill_players,czekajpvp);
-
-        }
-        }
-    else {window.setTimeout(start,wait);
-    licznik=0;
-	kom_clear();}
 }
 function wojny1(){
 	if(!GAME.emp_enemies.includes(1) && ![GAME.char_data.empire].includes(1) && adimp){
