@@ -21,37 +21,6 @@ GAME.initiate = function(){
 	$('#available_servers').html(con);
 	$('#available_servers option[value='+this.server+']').prop('selected',true);
 }
-GAME.parsePlayerShadow = function(data,pvp_master){
-	var entry=data.data;
-	var res='';
-	if(entry.data){
-		var pd=entry.data;
-		pd.empire=entry.empire;
-		var qb='';
-		var erank='';
-		var cls='';
-		if(data.cd){
-			qb+=this.showTimer(data.cd-this.getTime(),'data-special="10" data-pd="'+pd.id+'"',' playercd'+pd.id+'');
-			cls='initial_hide_forced playericons'+pd.id;
-		}
-		if(pd.empire){
-			var cls2='';
-			if(this.emp_enemies.indexOf(pd.empire)!=-1){
-				if(this.emp_enemies_t[pd.empire]==1) cls2='war';
-				else if(this.empire_locations.indexOf(this.char_data.loc)!=-1) cls2='war';
-			}
-			if(!pd.glory_rank) pd.glory_rank=1;
-			erank='<img src="/gfx/empire/ranks/'+pd.empire+'/'+pd.glory_rank+'.png" class="glory_rank '+cls2+'" />';
-		}
-		qb+='<button class="poption map_bicon '+cls+'" data-option="gpvp_attack" data-char_id="'+pd.id+'"><i class="ca"></i></button>';
-		if(pvp_master) qb+='<button class="poption map_bicon '+cls+'" data-option="gpvp_attack" data-char_id="'+pd.id+'" data-quick="1"><i class="qa"></i></button>';
-		res+='<div class="player"><div class="belka">'+erank+'<strong class="player_rank'+pd.ranga+' poption" data-option="show_player" data-char_id="'+pd.id+'">'+pd.name+' - '+LNG.lab348+'</strong> <span>'+this.rebPref(pd.reborn)+pd.level+'</span> </div><div id="gpvp_opts_'+pd.id+'" class="right_btns">'+qb+'</div></div>';
-	}
-	else if(entry.more){
-		res+='<div class="more_players"><button class="poption" data-option="load_more_players" data-start_from="'+entry.next_from+'">+'+entry.more+'</button></div>';
-	}
-	return res;
-}
 $(document).bind('keydown', '1', function(){
         if(JQS.chm.is(":focus") == false){
           $('#gh_game_helper .gh_pvp').click()
@@ -60,7 +29,7 @@ $(document).bind('keydown', '1', function(){
     });
 
 var caseNumber = 0;
-var wait = 8; //chodzenie
+var wait = 20; //chodzenie
 var wait2 =1; //chodzenie
 var czekajpvp=200; //czeka po przejściu
 var licznik=0;
@@ -112,7 +81,10 @@ var tabela99;
 
 function start(){
 	if(stop === false && tabela99.includes(gk))
-	{
+	{$("#player_list_con").find("[data-option=load_more_players]").click();
+		if(parseInt($('#clan_war_cnt').text()) < 1 && GAME.server==19 && GAME.char_data.klan_id !=0){
+				GAME.emitOrder({a:39,type:24,shorts:"ALP"});
+			}
 		 if(parseInt($('#clan_war_cnt').text()) < 4 && GAME.server==16){
 				GAME.emitOrder({a:39,type:24,shorts:"TAKA;LALA;AFK;LOL"});
 			}
@@ -120,9 +92,9 @@ function start(){
 				GAME.emitOrder({a:39,type:24,shorts:"ABCA;BTL;SSJ;FaH;Super;ESP;DEST;NAS;SDS"});
 			}
 			 if(parseInt($('#clan_war_cnt').text()) < 5 && GAME.server==18){
-				GAME.emitOrder({a:39,type:24,shorts:"lego;Domin;las;jad;sal"});
+				GAME.emitOrder({a:39,type:24,shorts:"lego;Domin;las;jad;Legion"});
 			}
-	 if(parseInt($('#clan_war_cnt').text()) < 25 && GAME.server==1 && GAME.char_data.klan_id==3542 ||  parseInt($('#clan_war_cnt').text()) < 20 && GAME.server==1 && GAME.char_data.klan_id==3434){
+	 if(parseInt($('#clan_war_cnt').text()) < 25 && GAME.server==1 && GAME.char_data.klan_id==3542 ||  parseInt($('#clan_war_cnt').text()) < 20 && GAME.server==1 && GAME.char_data.klan_id==3434 || parseInt($('#clan_war_cnt').text()) < 20 && GAME.server==1 && GAME.char_data.klan_id==10314){
     GAME.emitOrder({a:39,type:24,shorts:"fdsfsd;DK;PAKT;ZONG;DEMON;DOME;Legend;FRSPG;Saiyan;UVM;Ramizb;DARK;Shadow;MoOEn;MWars;LWDB;GM;Soul;JSKA;Say;Ssc;ZSCH;BDS;gimme;SSJL;SDS;CORP;PT;ROYALE;LEGION;BSS;BTK;WBB;LORDS;KNIGHT;LSSJ;BHD;ABCDEG;SzMR;GSayan;SKS"});
 			}
 			 if(parseInt($('#clan_war_cnt').text()) < 20 && GAME.server==1 && GAME.char_data.klan_id==25617){
@@ -165,11 +137,11 @@ check_players();
 break;
 case 4:
 caseNumber++;
-check_players2();
+kill_players();
 break;
 case 5:
 caseNumber++;
-kill_players();
+check_players2();
 break;
 case 6:
 caseNumber++;
@@ -280,15 +252,15 @@ function powrot2(){
 	else {window.setTimeout(powrot,waitzagadka);
 	}
 }
-var aa=true;
 function check_players(){
+	$("#player_list_con").find("[data-option=load_more_players]").click();
 	if(0<document.getElementById("player_list_con").childElementCount){
 		y = GAME.char_data.y
 		tabb=document.getElementById("player_list_con").children[0].children[1].children[0].textContent.split(":");
 	if(document.getElementById("player_list_con").children[0].children[1].childElementCount==3){
 		tabb=document.getElementById("player_list_con").children[0].children[1].children[0].textContent.split(":");
-		if( parseInt(tabb[1])<=0 && y==2){
-			window.setTimeout(check_players,1500);}
+		if(parseInt(tabb[1])<=0 && y==2 ||  parseInt(tabb[2])<=20 && parseInt(tabb[1])<=0 || parseInt(tabb[1])<=1 && y==2 && parseInt(tabb[2])<=20){
+			window.setTimeout(check_players,3300);}
 		else{
 			window.setTimeout(start,wait);}
 		}else{
@@ -297,26 +269,39 @@ function check_players(){
 
 }
 function check_players2(){
-	if(0<document.getElementById("player_list_con").childElementCount){
-		tabb=document.getElementById("player_list_con").children[0].children[1].children[0].textContent.split(":");
-	if( parseInt(tabb[2])<=30 && parseInt(tabb[1])<=0 ){	
-			window.setTimeout(check_players2,1500);}
-			else {
-			window.setTimeout(start,150)}
-			}else {window.setTimeout(start,150)
-	}
+	var aaa = $("#player_list_con").find(".player button"+"[data-option=pvp_attack]"+"[data-quick=1]"+":not(.initial_hide_forced)");
+	var bbb = $("#player_list_con").find(".player button"+"[data-option=gpvp_attack]"+"[data-quick=1]"+":not(.initial_hide_forced)");
+	kill_players1();
+	window.setTimeout(start,czekajpvp*(aaa.length+bbb.length)+(wait));
 }
-
 function kill_players(){
-	licznikkk=0;
-	if($("#player_list_con").find("[data-option=load_more_players]").length==1){
+	var aaa = $("#player_list_con").find(".player button"+"[data-option=pvp_attack]"+"[data-quick=1]"+":not(.initial_hide_forced)");
+	var bbb = $("#player_list_con").find(".player button"+"[data-option=gpvp_attack]"+"[data-quick=1]"+":not(.initial_hide_forced)");
+  if($("#player_list_con").find("[data-option=load_more_players]").length==1){
     $("#player_list_con").find("[data-option=load_more_players]").click();
 	window.setTimeout(kill_players,150);
-	} else {
-	var ll=document.getElementById("player_list_con").childElementCount
-   kill_players1();
-   window.setTimeout(start,czekajpvp*ll)
 	}
+    else if(aaa.length+bbb.length==0){
+		kill_players1();
+		window.setTimeout(start,czekajpvp*(aaa.length+bbb.length)+(wait));
+	}
+        else if(licznik<document.getElementById("player_list_con").childElementCount){
+            if(document.getElementById("player_list_con").children[licznik].children[1].children[0].attributes[1].value==="gpvp_attack" || document.getElementById("player_list_con").children[licznik].children[1].children[1].attributes[1].value==="gpvp_attack")
+            {
+		GAME.socket.emit('ga', {a:24,type:1,char_id:document.getElementById("player_list_con").children[licznik].children[0].children[1].attributes[2].value,quick:1});
+        licznik++;
+        window.setTimeout(kill_players,czekajpvp);
+        }
+        else {
+		GAME.socket.emit('ga', {a:24,char_id:document.getElementById("player_list_con").children[licznik].children[1].children[1].attributes[2].value,quick:1});
+        licznik++;
+        window.setTimeout(kill_players,czekajpvp);
+
+        }
+        }
+    else {window.setTimeout(start,wait);
+    licznik=0;
+	kom_clear();}
 }
 function wojny1(){
 	if(!GAME.emp_enemies.includes(1) && ![GAME.char_data.empire].includes(1) && adimp){
@@ -451,7 +436,7 @@ function cofanie(){
 	}
 	else{
 	GAME.emitOrder({a:4,dir:7,vo:GAME.map_options.vo});
-window.setTimeout(cofanie,270);
+window.setTimeout(cofanie,150);
 }
 }
 function prawodol(){

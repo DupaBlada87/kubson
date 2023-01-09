@@ -1,1 +1,375 @@
-var _0xd718=["\x6B\x65\x79\x64\x6F\x77\x6E","\x30","\x3A\x66\x6F\x63\x75\x73","\x69\x73","\x63\x68\x6D","\x4C\x65\x67\x65\x6E\x64\x61\x3A\x20\x4B\x6C\x61\x77\x69\x73\x7A\x20\x31\x2D\x20\x73\x74\x61\x72\x74\x2F\x73\x74\x6F\x70\x2C\x20\x32\x2D\x74\x70\x20\x50\x50\x2C\x20\x33\x2D\x62\u0142\x6F\x67\x6F\x2C\x20\x34\x2D\x6F\x64\x62\x69\x65\x72\x61\x6E\x69\x65\x20\x76\x69\x70\x2C\x20\x4E\x2D\x7A\x65\x67\x61\x72\x6B\x69\x2C\x20\x42\x2D\x70\x76\x70\x2C\x20\x58\x2D\x6F\x70\x63\x6A\x61\x20\x64\x61\x6C\x65\x6A\x2C\x20\x7A\x61\x6D\x79\x6B\x61\x6E\x69\x65\x20\x72\x61\x70\x6F\x72\x74\xF3\x77\x2F\x6B\x6F\x6D\x75\x6E\x69\x6B\x61\x74\xF3\x77\x2C\x20\x7A\x62\x69\x65\x72\x61\x6E\x69\x65","\x3C\x62\x72\x3E","","\x30\x32\x2E\x30\x31\x20\x2D\x20\x44\x6F\x64\x61\x6E\x6F\x20\x73\x6B\x72\x79\x70\x74\x79\x20\x72\x65\x73\x65\x74\x6F\x77\x61\x6E\x69\x65\x20\x6F\x72\x61\x7A\x20\x75\x6C\x65\x70\x73\x7A\x61\x6E\x69\x65\x20\x6B\x75\x6C\x69\x20\x65\x6E\x65\x72\x67\x69\x69","\x31\x30\x2E\x31\x32\x20\x2D\x20\x64\x61\x6C\x73\x7A\x65\x20\x70\x6F\x70\x72\x61\x77\x6B\x69\x20\x70\x6F\x73\x74\u0119\x70\x75\x20\x7A\x61\x64\x61\u0144\x2C\x20\x6F\x64\x20\x74\x65\x72\x61\x7A\x20\x7A\x61\x70\x61\x6D\x69\u0119\x74\x75\x6A\x65\x20\x73\x74\x61\x6E\x20\x70\x6F\x73\x74\u0119\x70\x75\x20\x7A\x61\x64\x61\u0144\x20\x77\x20\x70\x61\x6D\x69\u0119\x63\x69\x20\x6C\x6F\x6B\x61\x6C\x6E\x65\x6A\x28\x70\x6F\x20\x73\x63\x68\x77\x6F\x61\x6E\x69\x75\x20\x69\x20\x7A\x72\x65\x73\x65\x74\x6F\x77\x61\x6E\x69\x75\x20\x73\x74\x72\x6F\x6E\x79\x20\x64\x61\x6C\x65\x6A\x20\x62\u0119\x64\x7A\x69\x65\x20\x73\x63\x68\x6F\x77\x61\x6E\x65\x29\x2C\x20\x63\x6F\x66\x6E\x69\u0119\x63\x69\x65\x20\x7A\x6D\x69\x61\x6E\x20\x6E\x61\x20\x67\u0142\u0119\x62\x69\x20","\x30\x36\x2E\x31\x32\x20\x2D\x20\x70\x6F\x70\x72\x61\x77\x61\x20\x70\x6F\x73\x74\u0119\x70\x75\x20\x7A\x61\x64\x61\u0144\x2C\x20\x70\x6F\x70\x72\x61\x77\x6B\x69\x20\x6F\x6D\x69\x6A\x61\x6E\x69\x61\x20\x66\x72\x61\x67\xF3\x77\x20\x6E\x61\x20\x67\u0142\u0119\x62\x69\x20","\x30\x34\x2E\x31\x32\x20\x2D\x20\x70\x6F\x70\x72\x61\x77\x69\x6F\x6E\x6F\x20\x6F\x6D\x69\x6A\x61\x6E\x69\x65\x20\x66\x72\x61\x67\xF3\x77\x20\x77\x20\x73\x6B\x72\x79\x70\x63\x69\x65\x20\x6E\x61\x20\x70\x6C\x61\x6E\x65\x74\x61\x72\x6E\x65\x20","\x6B\x6F\x6D\x75\x6E\x69\x6B\x61\x74","\x62\x69\x6E\x64","\x65\x6D\x69\x74\x4F\x72\x64\x65\x72","\x67\x61","\x65\x6D\x69\x74","\x73\x6F\x63\x6B\x65\x74","\x62\x75\x74\x74\x6F\x6E","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x41\x53\x59\x53\x54\x55\x4A\x20\x57\x53\x5A\x59\x53\x54\x4B\x49\x4D\x20\x5A\x41\x20\x44\x41\x52\x4D\x4F","\x63\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x6E\x65\x77\x42\x74\x6E\x20\x6F\x70\x74\x69\x6F\x6E","\x61\x70\x70\x65\x6E\x64","\x70\x61\x72\x65\x6E\x74","\x5B\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x27\x63\x6C\x61\x6E\x5F\x61\x73\x73\x69\x73\x74\x5F\x61\x6C\x6C\x27\x5D","\x6F\x6E\x63\x6C\x69\x63\x6B","\x2E\x62\x74\x6E\x5F\x73\x6D\x61\x6C\x6C\x5F\x67\x6F\x6C\x64\x2E\x6F\x70\x74\x69\x6F\x6E\x5B\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x27\x63\x6C\x61\x6E\x5F\x61\x73\x73\x69\x73\x74\x27\x5D\x3A\x76\x69\x73\x69\x62\x6C\x65","\x6D\x61\x6B\x65\x41\x72\x72\x61\x79","\x70\x6F\x70","\x6C\x6F\x67","\x74\x69\x64","\x64\x61\x74\x61","\x74\x61\x72\x67\x65\x74","\x33","\x2E\x75\x73\x65\x5F\x62\x75\x66\x66\x3A\x63\x68\x65\x63\x6B\x65\x64","\x76\x61\x6C\x75\x65","\x6D\x61\x70","\x76\x61\x6C","\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x22\x62\x6C\x65\x73\x73\x5F\x74\x79\x70\x65\x22\x5D\x3A\x63\x68\x65\x63\x6B\x65\x64","\x23\x62\x6C\x65\x73\x73\x5F\x70\x6C\x61\x79\x65\x72\x73","\x32","\x34","\x69\x6E\x64\x65\x78\x4F\x66","\x6B\x6F\x6D\x73","\x6B\x6F\x6D\x63","\x70\x75\x73\x68","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6B\x6F\x6D\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x74\x6F\x70\x3A","\x25\x22\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6C\x6F\x73\x65\x5F\x6B\x6F\x6D\x22\x20\x64\x61\x74\x61\x2D\x69\x6E\x64\x3D\x22","\x22\x3E\x3C\x62\x3E\x58\x3C\x2F\x62\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6F\x6E\x74\x65\x6E\x74\x22\x3E","\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x64\x69\x76\x3E","\x6B\x63\x63","\x71\x75\x65\x73\x74\x41\x63\x74\x69\x6F\x6E","\x71\x75\x65\x73\x74\x5F\x61\x63\x74\x69\x6F\x6E","\x71\x75\x65\x73\x74\x5F\x61\x63\x74\x69\x6F\x6E\x5F\x71\x69\x64","\x71\x75\x65\x73\x74\x5F\x61\x63\x74\x69\x6F\x6E\x5F\x6D\x61\x78","\x70\x61\x72\x73\x65\x51\x75\x69\x63\x6B\x4F\x70\x74\x73","\x74\x75\x74\x6F\x72\x69\x61\x6C","\x71\x75\x69\x63\x6B\x5F\x6F\x70\x74\x73","\x74\x75\x74\x6F\x72\x69\x61\x6C\x73","\x3C\x69\x6D\x67\x20\x69\x64\x3D\x22\x6F\x70\x65\x6E\x5F\x74\x75\x74\x73\x22\x20\x73\x72\x63\x3D\x22\x2F\x67\x66\x78\x2F\x6C\x61\x79\x6F\x75\x74\x2F\x68\x65\x6C\x70\x65\x72\x2E\x70\x6E\x67\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x71\x6C\x69\x6E\x6B\x32\x20\x6F\x70\x74\x69\x6F\x6E\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x6F\x70\x65\x6E\x5F\x74\x75\x74\x73\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x33\x35\x38","\x3C\x2F\x64\x69\x76\x3E\x22\x20\x2F\x3E","\x2F\x6A\x73\x6F\x6E\x2F\x74\x75\x74\x6F\x72\x69\x61\x6C\x2E\x6A\x73\x6F\x6E","\x74\x75\x74\x6F\x72\x69\x61\x6C\x5F\x64\x61\x74\x61","\x74\x75\x74\x73","\x63\x68\x65\x63\x6B\x54\x75\x74\x6F\x72\x69\x61\x6C","\x67\x65\x74\x4A\x53\x4F\x4E","\x70\x72\x69\x76\x61\x74\x65\x5F\x70\x6C\x61\x6E\x65\x74","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x71\x6C\x69\x6E\x6B\x20\x70\x72\x69\x76\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x70\x72\x69\x76\x61\x74\x65\x5F\x74\x65\x6C\x65\x70\x6F\x72\x74\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x31\x33\x38","\x3C\x2F\x64\x69\x76\x3E\x22\x3E\x3C\x2F\x64\x69\x76\x3E","\x74\x65\x6C\x65\x70\x6F\x72\x74","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x71\x6C\x69\x6E\x6B\x20\x74\x65\x6C\x65\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x75\x73\x65\x5F\x74\x65\x6C\x65\x70\x6F\x72\x74\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x31\x34\x30","\x74\x72\x61\x76\x65\x6C","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x71\x6C\x69\x6E\x6B\x20\x74\x72\x61\x76\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x75\x73\x65\x5F\x74\x72\x61\x76\x65\x6C\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x31\x34\x31","\x73\x73\x6A","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x71\x6C\x69\x6E\x6B\x20\x73\x73\x6A","\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x75\x73\x65\x5F\x74\x72\x61\x6E\x73\x66\x6F\x72\x6D\x22\x20\x64\x61\x74\x61\x2D\x74\x65\x63\x68\x3D\x22","\x22\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x31\x33\x39","\x6F\x6E\x6C\x69\x6E\x65\x5F\x72\x65\x77\x61\x72\x64","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x71\x6C\x69\x6E\x6B\x20\x64\x61\x69\x6C\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x64\x61\x69\x6C\x79\x5F\x72\x65\x77\x61\x72\x64\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x31\x37\x36","\x62\x6C\x65\x73\x73","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x73\x65\x6C\x65\x63\x74\x5F\x70\x61\x67\x65\x20\x71\x6C\x69\x6E\x6B\x20\x62\x6C\x65\x73\x22\x20\x64\x61\x74\x61\x2D\x70\x61\x67\x65\x3D\x22\x67\x61\x6D\x65\x5F\x62\x75\x66\x66\x73\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x31\x38\x38","\x73\x75\x62","\x6C\x65\x6E\x67\x74\x68","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x71\x6C\x69\x6E\x6B\x20\x73\x75\x62\x73\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x71\x75\x69\x63\x6B\x5F\x75\x73\x65\x5F\x73\x75\x62\x73\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x31\x38\x39","\x73\x65\x6E\x7A\x75\x73","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x71\x6C\x69\x6E\x6B\x20\x73\x65\x6E\x7A\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x71\x75\x69\x63\x6B\x5F\x75\x73\x65\x5F\x73\x65\x6E\x7A\x75\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x6C\x61\x62\x31\x39\x30","\x65\x6D\x70\x69\x72\x65","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x73\x65\x6C\x65\x63\x74\x5F\x70\x61\x67\x65\x20\x71\x6C\x69\x6E\x6B\x20\x65\x6D\x70","\x22\x20\x64\x61\x74\x61\x2D\x70\x61\x67\x65\x3D\x22\x67\x61\x6D\x65\x5F\x65\x6D\x70\x69\x72\x65\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6C\x61\x6E\x5F\x70\x6C\x61\x6E\x65\x74\x5F\x66\x61\x73\x74\x20\x6F\x70\x74\x69\x6F\x6E\x20\x71\x6C\x69\x6E\x6B\x20\x70\x72\x69\x76\x22\x20\x6F\x6E\x43\x6C\x69\x63\x6B\x3D\x22\x47\x41\x4D\x45\x2E\x65\x6D\x69\x74\x4F\x72\x64\x65\x72\x28\x7B\x61\x3A\x33\x39\x2C\x74\x79\x70\x65\x3A\x33\x32\x7D\x29\x3B\x22\x20\x64\x61\x74\x61\x2D\x74\x6F\x67\x67\x6C\x65\x3D\x22\x74\x6F\x6F\x6C\x74\x69\x70\x22\x20\x64\x61\x74\x61\x2D\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2D\x74\x69\x74\x6C\x65\x3D\x22\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x74\x74\x3E\x50\x6C\x61\x6E\x65\x74\x61\x20\x4B\x6C\x61\x6E\x6F\x77\x61\x3C\x2F\x64\x69\x76\x3E\x22\x3E\x3C\x2F\x64\x69\x76\x3E","\x68\x74\x6D\x6C","\x23\x71\x75\x69\x63\x6B\x5F\x62\x61\x72","\x69\x74\x65\x6D\x5F\x69\x64","\x73\x65\x6C","\x64\x72\x61\x67\x67\x65\x64\x5F\x69\x74\x65\x6D","\x73\x74\x61\x63\x6B","\x63\x6C\x61\x73\x73","\x3C\x64\x69\x76\x3E","\x6C\x61\x62\x34\x30","\x3C\x62\x72\x20\x2F\x3E\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x22","\x69\x6D\x67","\x22\x20\x2F\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x67\x61\x6D\x65\x5F\x69\x6E\x70\x75\x74\x20\x73\x6D\x61\x6C\x6C\x22\x3E\x3C\x69\x6E\x70\x75\x74\x20\x69\x64\x3D\x22\x75\x70\x67\x5F\x61\x6D\x22\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x20\x2F\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x62\x75\x74\x74\x6F\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x73\x65\x74\x5F\x6D\x61\x78\x20\x62\x74\x6E\x5F\x73\x6D\x61\x6C\x6C\x5F\x67\x6F\x6C\x64\x22\x20\x64\x61\x74\x61\x2D\x74\x61\x72\x67\x65\x74\x3D\x22\x23\x75\x70\x67\x5F\x61\x6D\x22\x20\x64\x61\x74\x61\x2D\x6D\x61\x78\x3D\x22","\x22\x3E\x4D\x41\x58\x3C\x2F\x62\x75\x74\x74\x6F\x6E\x3E\x3C\x62\x72\x20\x2F\x3E\x4E\x61\x20\x6A\x61\x6B\x69\x20\x2B\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x67\x61\x6D\x65\x5F\x69\x6E\x70\x75\x74\x20\x73\x6D\x61\x6C\x6C\x22\x3E\x3C\x69\x6E\x70\x75\x74\x20\x69\x64\x3D\x22\x73\x75\x70\x65\x72\x5F\x64\x65\x73\x69\x72\x65\x64\x5F\x6C\x76\x6C\x22\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x62\x72\x3E\x49\x6C\x65\x20\x73\x75\x62\x65\x6B\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x67\x61\x6D\x65\x5F\x69\x6E\x70\x75\x74\x20\x73\x6D\x61\x6C\x6C\x22\x3E\x3C\x69\x6E\x70\x75\x74\x20\x69\x64\x3D\x22\x73\x75\x70\x65\x72\x5F\x73\x75\x62\x73\x22\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x76\x61\x6C\x75\x65\x3D\x22\x31\x22\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x62\x72\x20\x2F\x3E\x3C\x62\x75\x74\x74\x6F\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x62\x74\x6E\x5F\x73\x6D\x61\x6C\x6C\x5F\x67\x6F\x6C\x64\x22\x20\x6F\x6E\x63\x6C\x69\x63\x6B\x3D\x22\x75\x70\x67\x72\x61\x64\x69\x6E\x67\x28","\x62\x61\x73\x65\x5F\x69\x74\x65\x6D\x5F\x69\x64","\x29\x22\x3E\x6F\x73\x61\x20\x3A\x29\x3C\x2F\x62\x75\x74\x74\x6F\x6E\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x62\x72\x3E","\x6C\x61\x62\x33\x36","\x3A\x20\x3C\x62\x20\x69\x64\x3D\x22\x75\x70\x67\x5F\x73\x75\x63\x63\x65\x73\x5F\x63\x68\x61\x6E\x63\x65\x22\x3E\x3F\x3F\x3C\x2F\x62\x3E\x25\x3C\x62\x72\x20\x2F\x3E","\x6C\x61\x62\x34\x31","\x3A\x20\x3C\x62\x20\x69\x64\x3D\x22\x75\x70\x67\x5F\x73\x75\x62\x5F\x6C\x65\x66\x74\x22\x3E\x3C\x2F\x62\x3E\x3C\x62\x72\x20\x2F\x3E\x3C\x62\x75\x74\x74\x6F\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x70\x74\x69\x6F\x6E\x20\x62\x74\x6E\x5F\x73\x6D\x61\x6C\x6C\x5F\x67\x6F\x6C\x64\x22\x20\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x22\x75\x70\x67\x32\x5F\x69\x74\x65\x6D\x22\x3E\x4F\x4B\x3C\x2F\x62\x75\x74\x74\x6F\x6E\x3E\x3C\x2F\x64\x69\x76\x3E","\x22\x3E\x4D\x41\x58\x3C\x2F\x62\x75\x74\x74\x6F\x6E\x3E\x3C\x62\x72\x20\x2F\x3E\x3C\x62\x72\x20\x2F\x3E","\x23\x73\x75\x70\x65\x72\x5F\x64\x65\x73\x69\x72\x65\x64\x5F\x6C\x76\x6C","\x23\x73\x75\x70\x65\x72\x5F\x73\x75\x62\x73","\x5B\x64\x61\x74\x61\x2D\x62\x61\x73\x65\x5F\x69\x74\x65\x6D\x5F\x69\x64\x3D","\x5D","\x75\x70\x67\x72\x61\x64\x65","\x65\x6B\x77\x5F\x70\x61\x67\x65","\x23\x75\x70\x67\x5F\x61\x6D","\x63\x68\x69\x6C\x64\x45\x6C\x65\x6D\x65\x6E\x74\x43\x6F\x75\x6E\x74","\x70\x6C\x61\x79\x65\x72\x5F\x6C\x69\x73\x74\x5F\x63\x6F\x6E","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x3A","\x73\x70\x6C\x69\x74","\x74\x65\x78\x74\x43\x6F\x6E\x74\x65\x6E\x74","\x63\x68\x69\x6C\x64\x72\x65\x6E","\x5B\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x6C\x6F\x61\x64\x5F\x6D\x6F\x72\x65\x5F\x70\x6C\x61\x79\x65\x72\x73\x5D","\x66\x69\x6E\x64","\x23\x70\x6C\x61\x79\x65\x72\x5F\x6C\x69\x73\x74\x5F\x63\x6F\x6E","\x63\x6C\x69\x63\x6B","\x73\x65\x74\x54\x69\x6D\x65\x6F\x75\x74","\x61\x74\x74\x72\x69\x62\x75\x74\x65\x73","\x67\x70\x76\x70\x5F\x61\x74\x74\x61\x63\x6B","\x62","\x78","\x64\x61\x74\x61\x2D\x6D\x69\x64","\x61\x74\x74\x72","\x5B\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x73\x74\x61\x72\x74\x5F\x6D\x69\x6E\x65\x5D","\x23\x66\x69\x65\x6C\x64\x5F\x6F\x70\x74\x73\x5F\x63\x6F\x6E","\x64\x61\x74\x61\x2D\x71\x69\x64","\x5B\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x71\x75\x65\x73\x74\x5F\x64\x75\x65\x6C\x5D","\x23\x71\x75\x65\x73\x74\x5F\x63\x6F\x6E","\x64\x61\x74\x61\x2D\x71\x62\x5F\x69\x64","\x5B\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x66\x69\x6E\x69\x73\x68\x5F\x71\x75\x65\x73\x74\x5D","\x53\x75\x62\x73\x74\x61\x6E\x63\x6A\x69","\x69\x6E\x63\x6C\x75\x64\x65\x73","\x6F\x75\x74\x65\x72\x54\x65\x78\x74","\x70\x72\x65\x76\x4F\x62\x6A\x65\x63\x74","\x4E\x75\x64\x61","\x66\x61\x64\x65\x4F\x75\x74","\x23\x66\x69\x67\x68\x74\x5F\x76\x69\x65\x77","\x6E","\x64\x61\x74\x61\x2D\x69\x74\x65\x6D\x5F\x69\x64","\x64\x69\x76\x5B\x64\x61\x74\x61\x2D\x62\x61\x73\x65\x5F\x69\x74\x65\x6D\x5F\x69\x64\x3D\x31\x36\x31\x38\x5D","\x23\x65\x6B\x77\x5F\x70\x61\x67\x65\x5F\x69\x74\x65\x6D\x73","\x5B\x64\x61\x74\x61\x2D\x6F\x70\x74\x69\x6F\x6E\x3D\x63\x6F\x6D\x70\x72\x65\x73\x73\x5F\x69\x74\x65\x6D\x73\x5D","\x67\x65\x74\x45\x6D\x70\x44\x65\x74\x61\x69\x6C\x73","\x61\x63\x74\x69\x76\x65","\x65\x6E\x65\x72\x67\x79","\x69\x64","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x70\x74\x74\x3E","\x6C\x65\x76\x65\x6C","\x65\x6D\x70\x6C\x6F\x79\x65\x5F\x65\x78\x70","\x3C\x69\x6D\x67\x20\x73\x72\x63\x3D\x2F\x67\x66\x78\x2F\x65\x6D\x70\x6C\x6F\x79\x65\x65\x2F","\x74\x79\x70\x65","\x2E\x70\x6E\x67\x20\x77\x69\x64\x74\x68\x3D\x31\x30\x30\x20\x61\x6C\x69\x67\x6E\x3D\x6C\x65\x66\x74\x20\x2F\x3E\x3C\x62\x3E","\x6E\x61\x6D\x65","\x3C\x2F\x62\x3E\x3C\x62\x72\x20\x2F\x3E\x3C\x62\x3E","\x65\x6D\x70\x74\x79\x70","\x3C\x2F\x62\x3E\x20\x2D\x20\x3C\x62\x20\x63\x6C\x61\x73\x73\x3D\x69\x74\x65\x6D","\x3E","\x69\x74\x65\x6D\x5F\x63\x6C\x61\x73\x73","\x3C\x2F\x62\x3E\x3C\x62\x72\x20\x2F\x3E","\x6C\x61\x62\x31","\x3A\x20\x3C\x62\x3E","\x64\x6F\x74\x73","\x3C\x2F\x62\x3E\x3C\x62\x72\x20\x2F\x3E\x45\x58\x50\x3A\x20\x3C\x62\x3E","\x65\x78\x70","\x20\x2F\x20","\x3C\x2F\x62\x3E\x3C\x62\x72\x20\x2F\x3E\x3C\x62\x72\x20\x2F\x3E\x3C\x62\x20\x63\x6C\x61\x73\x73\x3D\x6F\x72\x61\x6E\x67\x65\x3E","\x6C\x61\x62\x32\x38\x36","\x6C\x61\x62\x33\x31\x33","\x3C\x2F\x62\x3E\x20\x2F\x20\x3C\x62\x3E","\x6D\x61\x78\x65\x6E\x65\x72\x67\x79","\x71\x75\x61\x6C\x69\x66\x69\x65\x64","\x3C\x62\x20\x63\x6C\x61\x73\x73\x3D\x67\x72\x65\x65\x6E\x3E","\x6C\x61\x62\x33\x31\x34","\x3C\x2F\x64\x69\x76\x3E","\x64\x61\x74\x61\x2D\x6C\x65\x76\x65\x6C","\x5B\x63\x6C\x61\x73\x73\x3D\x27\x76\x69\x70\x5F\x63\x61\x74\x20\x20\x6F\x70\x74\x69\x6F\x6E\x27\x5D","\x23\x6D\x6F\x6E\x74\x68\x6C\x79\x5F\x76\x69\x70\x5F\x72\x65\x77\x61\x72\x64\x73","\x23\x67\x65\x6E\x65\x72\x61\x6C\x5F\x76\x69\x70\x5F\x72\x65\x77\x61\x72\x64\x73","\x67\x76\x69\x70\x5F\x73\x63\x6F\x72\x65","\x63\x68\x61\x72\x5F\x64\x61\x74\x61","\x4F\x64\x65\x62\x72\x61\x6E\x6F\x20\x77\x73\x7A\x79\x73\x74\x6B\x69\x65\x20\x6D\x6F\u017C\x6C\x69\x77\x65\x20\x6E\x61\x67\x72\x6F\x64\x79\x20\x7A\x20\x56\x69\x70\x61\x21\x21\x21","\x23\x62\x6C\x65\x73\x73\x5F\x74\x79\x70\x65\x5F\x32","\x61\x62\x62\x72\x65\x76\x69\x61\x74\x65\x4E\x75\x6D\x62\x65\x72","\x70\x6F\x77","\x4B","\x4D","\x4D\x6C\x64","\x42","\x42\x6C\x64","\x54","\x51\x75\x61\x64","\x51\x75\x69\x6E","\x53\x65\x78\x74","\x53\x65\x70","\x4F\x63\x74","\x4E\x6F\x6E","\x44\x65\x63","\x55\x6E\x64","\x44\x75\x6F","\x54\x72\x65","\x51\x75\x61\x74","\x51\x75\x69\x6E\x64","\x53\x65\x78\x64","\x53\x65\x70\x74","\x4F\x63\x74\x6F","\x4E\x6F\x76\x65","\x56\x69\x67\x69","\x66\x6C\x6F\x6F\x72","\x20","\x23\x71\x75\x65\x73\x74\x5F\x74\x72\x61\x63\x6B\x5F\x63\x6F\x6E","\x68\x69\x64\x65\x5F\x74\x72\x61\x63\x6B\x65\x72","\x67\x65\x74\x49\x74\x65\x6D","\x73\x65\x74\x49\x74\x65\x6D","\x68\x69\x64\x65","\x2E\x71\x74\x72\x61\x63\x6B","\x72\x65\x6D\x6F\x76\x65\x49\x74\x65\x6D","\x73\x68\x6F\x77","\x6F\x6E","\x62\x6F\x64\x79","\x73\x63\x72\x6F\x6C\x6C","\x68\x61\x73\x43\x6C\x61\x73\x73","\x23\x64\x72\x61\x67\x5F\x63\x6F\x6E","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x23\x64\x72\x61\x67\x5F\x74\x72\x61\x63\x6B\x65\x72","\x70\x61\x72\x73\x65\x54\x72\x61\x63\x6B\x65\x72","\x68\x65\x61\x64\x65\x72","\x73\x6C\x69\x63\x65","\x2E\x2E\x2E","\x3C\x64\x69\x76\x20\x69\x64\x3D\x22\x74\x72\x61\x63\x6B\x5F\x71\x75\x65\x73\x74\x5F","\x71\x62\x5F\x69\x64","\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x71\x74\x72\x61\x63\x6B\x22\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x73\x65\x70","\x6D","\x22\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x62\x3E","\x3C\x2F\x62\x3E\x20","\x77\x61\x6E\x74","\x71\x75\x65\x73\x74\x5F\x77\x61\x6E\x74","\x6C\x6F\x63\x61\x6C\x53\x74\x6F\x72\x61\x67\x65","\x4C\x69\x73\x74\x61\x20\x7A\x6D\x69\x61\x6E\x20\x70\x6F\x64\x20\x6B\x6C\x61\x77\x69\x73\x7A\x65\x6D\x20\x30"];$(document)[_0xd718[13]](_0xd718[0],_0xd718[1],function(){if(JQS[_0xd718[4]][_0xd718[3]](_0xd718[2])== false){GAME[_0xd718[12]](_0xd718[5]+ _0xd718[6]+ _0xd718[7]+ _0xd718[6]+ _0xd718[8]+ _0xd718[6]+ _0xd718[9]+ _0xd718[6]+ _0xd718[10]+ _0xd718[6]+ _0xd718[11])};return false});GAME[_0xd718[14]]= (_0xa4edx1)=>{return GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],_0xa4edx1)};var tabela99=[480844];var freeAssist=document[_0xd718[19]](_0xd718[18]);freeAssist[_0xd718[20]]= _0xd718[21];freeAssist[_0xd718[22]]= _0xd718[23];$(_0xd718[26])[_0xd718[25]]()[_0xd718[24]](freeAssist);freeAssist[_0xd718[27]]= function(){let _0xa4edx4=$[_0xd718[29]]($(_0xd718[28]));let _0xa4edx5=setInterval(function(){let _0xa4edx6=_0xa4edx4[_0xd718[30]]();console[_0xd718[31]](_0xa4edx6);if(!_0xa4edx6){return clearInterval(_0xa4edx5)};GAME[_0xd718[14]]({a:39,type:55,tid:$(_0xa4edx6)[_0xd718[33]](_0xd718[32]),target:$(_0xa4edx6)[_0xd718[33]](_0xd718[34])})},50)};$(document)[_0xd718[13]](_0xd718[0],_0xd718[35],function(){if(JQS[_0xd718[4]][_0xd718[3]](_0xd718[2])== false){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:14,type:3});setTimeout(()=>{var _0xa4edx7=$[_0xd718[38]]($(_0xd718[36]),function(_0xa4edx8,_0xa4edx9){return +_0xa4edx8[_0xd718[37]]});var _0xa4edxa=$(_0xd718[40])[_0xd718[39]]();GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:14,type:5,buffs:_0xa4edx7,players:$(_0xd718[41])[_0xd718[39]](),btype:_0xa4edxa})},500)};return false});$(document)[_0xd718[13]](_0xd718[0],_0xd718[42],function(){if(JQS[_0xd718[4]][_0xd718[3]](_0xd718[2])== false){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:15,type:13})};return false});var checkkkk=true;$(document)[_0xd718[13]](_0xd718[0],_0xd718[43],function(){if(JQS[_0xd718[4]][_0xd718[3]](_0xd718[2])== false){checkkkk= true;vip()};return false});GAME[_0xd718[12]]= function(_0xa4edxc){if(this[_0xd718[45]][_0xd718[44]](_0xa4edxc)==  -1){if(this[_0xd718[46]]= 30){this[_0xd718[46]]= 30};var _0xa4edxd=this[_0xd718[45]][_0xd718[47]](_0xa4edxc)- 1;JQS[_0xd718[52]][_0xd718[24]](_0xd718[48]+ this[_0xd718[46]]+ _0xd718[49]+ _0xa4edxd+ _0xd718[50]+ _0xa4edxc+ _0xd718[51]);this[_0xd718[46]]++;kom_close_bind()}};GAME[_0xd718[53]]= function(){if(this[_0xd718[54]]){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:22,type:7,id:GAME[_0xd718[55]],cnt:GAME[_0xd718[56]]})}};GAME[_0xd718[57]]= function(){var _0xa4edxe=_0xd718[7];if(this[_0xd718[59]][_0xd718[58]]){this[_0xd718[60]]= this[_0xd718[59]][_0xd718[58]];_0xa4edxe+= _0xd718[61]+ LNG[_0xd718[62]]+ _0xd718[63];$[_0xd718[68]](_0xd718[64],function(_0xa4edxf){GAME[_0xd718[65]]= _0xa4edxf[_0xd718[66]];GAME[_0xd718[67]]()})};if(this[_0xd718[59]][_0xd718[69]]){_0xa4edxe+= _0xd718[70]+ LNG[_0xd718[71]]+ _0xd718[72]};if(this[_0xd718[59]][_0xd718[73]]){_0xa4edxe+= _0xd718[74]+ LNG[_0xd718[75]]+ _0xd718[72]};if(this[_0xd718[59]][_0xd718[76]]){_0xa4edxe+= _0xd718[77]+ LNG[_0xd718[78]]+ _0xd718[72]};if(this[_0xd718[59]][_0xd718[79]]){_0xa4edxe+= _0xd718[80]+ this[_0xd718[59]][_0xd718[79]][1]+ _0xd718[81]+ this[_0xd718[59]][_0xd718[79]][0]+ _0xd718[82]+ LNG[_0xd718[83]]+ _0xd718[72]};if(this[_0xd718[59]][_0xd718[84]]){_0xa4edxe+= _0xd718[85]+ LNG[_0xd718[86]]+ _0xd718[72]};if(this[_0xd718[59]][_0xd718[87]]){_0xa4edxe+= _0xd718[88]+ LNG[_0xd718[89]]+ _0xd718[72]};if(this[_0xd718[59]][_0xd718[90]]&& this[_0xd718[59]][_0xd718[90]][_0xd718[91]]){_0xa4edxe+= _0xd718[92]+ LNG[_0xd718[93]]+ _0xd718[72]};if(this[_0xd718[59]][_0xd718[94]]&& this[_0xd718[59]][_0xd718[94]][_0xd718[91]]){_0xa4edxe+= _0xd718[95]+ LNG[_0xd718[96]]+ _0xd718[72]};if(this[_0xd718[59]][_0xd718[97]]){_0xa4edxe+= _0xd718[98]+ this[_0xd718[59]][_0xd718[97]]+ _0xd718[99]+ LNG[_0xd718[97]+ this[_0xd718[59]][_0xd718[97]]]+ _0xd718[72]};_0xa4edxe+= _0xd718[100];$(_0xd718[102])[_0xd718[101]](_0xa4edxe);option_bind();tooltip_bind();page_bind()};function upgrade_item(){var _0xa4edx11=parseInt(GAME[_0xd718[105]][_0xd718[104]][_0xd718[33]](_0xd718[103]));var _0xa4edx12=GAME[_0xd718[105]][_0xd718[106]];var _0xa4edxc;if(parseInt(GAME[_0xd718[105]][_0xd718[104]][_0xd718[33]](_0xd718[107]))== 12){_0xa4edxc= _0xd718[108]+ LNG[_0xd718[109]]+ _0xd718[110]+ GAME[_0xd718[105]][_0xd718[111]]+ _0xd718[112]+ _0xa4edx12+ _0xd718[113]+ GAME[_0xd718[105]][_0xd718[104]][_0xd718[33]](_0xd718[114])+ _0xd718[115]+ LNG[_0xd718[116]]+ _0xd718[117]+ LNG[_0xd718[118]]+ _0xd718[119]}else {_0xa4edxc= _0xd718[108]+ LNG[_0xd718[109]]+ _0xd718[110]+ GAME[_0xd718[105]][_0xd718[111]]+ _0xd718[112]+ _0xa4edx12+ _0xd718[120]+ LNG[_0xd718[116]]+ _0xd718[117]+ LNG[_0xd718[118]]+ _0xd718[119]};GAME[_0xd718[12]](_0xa4edxc);setmaxBind();option_bind();GAME[_0xd718[14]]({a:12,type:9,iid:_0xa4edx11})}function upgrading(_0xa4edx14,_0xa4edx15,_0xa4edx16){var _0xa4edx15=parseInt($(_0xd718[121])[_0xd718[39]]());var _0xa4edx16=parseInt($(_0xd718[122])[_0xd718[39]]());var _0xa4edx17=setInterval(function(){var _0xa4edx18=$(_0xd718[123]+ _0xa4edx14+ _0xd718[124]);var _0xa4edx19=_0xa4edx18[_0xd718[33]](_0xd718[103]);if(_0xa4edx18[_0xd718[33]](_0xd718[125])< _0xa4edx15& _0xa4edx16> 0){GAME[_0xd718[14]]({a:12,type:10,iid:_0xa4edx19,page:GAME[_0xd718[126]],am:parseInt($(_0xd718[127])[_0xd718[39]]())});_0xa4edx16--}else {clearInterval(_0xa4edx17)}},200)}var licznikkk;function kill_players1(){if(licznikkk!= document[_0xd718[130]](_0xd718[129])[_0xd718[128]]){var _0xa4edx1c=document[_0xd718[130]](_0xd718[129])[_0xd718[134]][licznikkk][_0xd718[134]][1][_0xd718[134]][0][_0xd718[133]][_0xd718[132]](_0xd718[131]);if($(_0xd718[137])[_0xd718[136]](_0xd718[135])[_0xd718[91]]== 1){$(_0xd718[137])[_0xd718[136]](_0xd718[135])[_0xd718[138]]();window[_0xd718[139]](kill_players1,110)}else {if(parseInt(_0xa4edx1c[1])>= 0){window[_0xd718[139]](kill_players1,30);licznikkk++}else {if(licznikkk< document[_0xd718[130]](_0xd718[129])[_0xd718[128]]){if(document[_0xd718[130]](_0xd718[129])[_0xd718[134]][licznikkk][_0xd718[134]][1][_0xd718[134]][0][_0xd718[140]][1][_0xd718[37]]=== _0xd718[141]|| document[_0xd718[130]](_0xd718[129])[_0xd718[134]][licznikkk][_0xd718[134]][1][_0xd718[134]][1][_0xd718[140]][1][_0xd718[37]]=== _0xd718[141]){GAME[_0xd718[14]]({a:24,type:1,char_id:document[_0xd718[130]](_0xd718[129])[_0xd718[134]][licznikkk][_0xd718[134]][0][_0xd718[134]][1][_0xd718[140]][2][_0xd718[37]],quick:1});window[_0xd718[139]](kill_players1,75)}else {GAME[_0xd718[14]]({a:24,char_id:document[_0xd718[130]](_0xd718[129])[_0xd718[134]][licznikkk][_0xd718[134]][1][_0xd718[134]][1][_0xd718[140]][2][_0xd718[37]],quick:1});window[_0xd718[139]](kill_players1,75)}}else {licznikkk= 0;kom_clear()}}}}else {licznikkk= 0;kom_clear()}}$(document)[_0xd718[13]](_0xd718[0],_0xd718[142],function(){if(JQS[_0xd718[4]][_0xd718[3]](_0xd718[2])== false){licznikkk= 0;kill_players1()};return false});$(document)[_0xd718[13]](_0xd718[0],_0xd718[143],function(){if(JQS[_0xd718[4]][_0xd718[3]](_0xd718[2])== false){var _0xa4edx1d=$(_0xd718[147])[_0xd718[136]](_0xd718[146])[_0xd718[145]](_0xd718[144]);var _0xa4edx1e=$(_0xd718[150])[_0xd718[136]](_0xd718[149])[_0xd718[145]](_0xd718[148]);;;var _0xa4edx1f=$(_0xd718[150])[_0xd718[136]](_0xd718[152])[_0xd718[145]](_0xd718[151]);if($(_0xd718[150])[_0xd718[136]](_0xd718[152])[_0xd718[91]]== 1){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:22,type:2,button:1,id:_0xa4edx1f})};if($(_0xd718[150])[_0xd718[136]](_0xd718[152])[_0xd718[156]][0][_0xd718[155]][_0xd718[154]](_0xd718[153])&& $(_0xd718[150])[_0xd718[136]](_0xd718[152])[_0xd718[91]]== 3){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:22,type:2,button:3,id:_0xa4edx1f})};if($(_0xd718[150])[_0xd718[136]](_0xd718[152])[_0xd718[156]][0][_0xd718[155]][_0xd718[154]](_0xd718[157])&& $(_0xd718[150])[_0xd718[136]](_0xd718[152])[_0xd718[91]]== 3){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:22,type:2,button:2,id:_0xa4edx1f})};if(_0xa4edx1d){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:22,type:8,mid:_0xa4edx1d})};if(_0xa4edx1e){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:22,type:6,id:_0xa4edx1e})};GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:22,type:1});setTimeout(()=>{$(_0xd718[159])[_0xd718[158]]()},500);kom_clear()};return false});$(document)[_0xd718[13]](_0xd718[0],_0xd718[160],function(){if(JQS[_0xd718[4]][_0xd718[3]](_0xd718[2])== false){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:12,page:1,used:1});kompresory()};return false});function kompresory(){var _0xa4edx21=$(_0xd718[163])[_0xd718[136]](_0xd718[162])[_0xd718[145]](_0xd718[161]);var _0xa4edx22=$(_0xd718[150])[_0xd718[136]](_0xd718[164])[_0xd718[145]](_0xd718[151]);GAME[_0xd718[14]]({a:22,type:10,item_id:parseInt(_0xa4edx21),qb_id:parseInt(_0xa4edx22)})}GAME[_0xd718[165]]= function(_0xa4edx23){if(_0xa4edx23[_0xd718[166]]== 1){en= _0xa4edx23[_0xd718[167]];id= _0xa4edx23[_0xd718[168]]};var _0xa4edx24=_0xd718[169];var _0xa4edx25=this[_0xd718[171]](_0xa4edx23[_0xd718[170]]+ 1);_0xa4edx24+= _0xd718[172]+ _0xa4edx23[_0xd718[173]]+ _0xd718[174]+ _0xa4edx23[_0xd718[175]]+ _0xd718[176]+ LNG[_0xd718[177]+ _0xa4edx23[_0xd718[173]]]+ _0xd718[178]+ _0xa4edx23[_0xd718[107]]+ _0xd718[179]+ LNG[_0xd718[180]+ _0xa4edx23[_0xd718[107]]]+ _0xd718[181]+ LNG[_0xd718[182]]+ _0xd718[183]+ this[_0xd718[184]](_0xa4edx23[_0xd718[170]])+ _0xd718[185]+ this[_0xd718[184]](_0xa4edx23[_0xd718[186]])+ _0xd718[187]+ this[_0xd718[184]](_0xa4edx25)+ _0xd718[188]+ LNG[_0xd718[189]]+ _0xd718[181];_0xa4edx24+= LNG[_0xd718[190]]+ _0xd718[183]+ _0xa4edx23[_0xd718[167]]+ _0xd718[191]+ _0xa4edx23[_0xd718[192]]+ _0xd718[181];if(_0xa4edx23[_0xd718[193]]){_0xa4edx24+= _0xd718[194]+ LNG[_0xd718[195]]+ _0xd718[181]};_0xa4edx24+= _0xd718[196];return _0xa4edx24};function vip(){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:54,type:0});var _0xa4edx27=$(_0xd718[199])[_0xd718[136]](_0xd718[198])[_0xd718[145]](_0xd718[197]);var _0xa4edx28=$(_0xd718[200])[_0xd718[136]](_0xd718[198])[_0xd718[145]](_0xd718[197]);if(GAME[_0xd718[202]][_0xd718[201]]>= 0&& checkkkk){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:54,type:0});checkkkk= false;window[_0xd718[139]](vip,100)}else {if($(_0xd718[199])[_0xd718[136]](_0xd718[198])[_0xd718[91]]!= 0){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:54,type:1,vip:0,level:_0xa4edx27});window[_0xd718[139]](vip,100)}else {if($(_0xd718[200])[_0xd718[136]](_0xd718[198])[_0xd718[91]]!= 0){GAME[_0xd718[17]][_0xd718[16]](_0xd718[15],{a:54,type:1,vip:1,level:_0xa4edx28});window[_0xd718[139]](vip,100)}else {GAME[_0xd718[12]](_0xd718[203])}}}}$(_0xd718[204])[_0xd718[138]]();GAME[_0xd718[205]]= function(_0xa4edx29,_0xa4edx2a= 2){_0xa4edx2a= Math[_0xd718[206]](10,_0xa4edx2a);var _0xa4edx2b=[_0xd718[207],_0xd718[208],_0xd718[209],_0xd718[210],_0xd718[211],_0xd718[212],_0xd718[213],_0xd718[214],_0xd718[215],_0xd718[216],_0xd718[217],_0xd718[218],_0xd718[219],_0xd718[220],_0xd718[221],_0xd718[222],_0xd718[223],_0xd718[224],_0xd718[225],_0xd718[226],_0xd718[227],_0xd718[228],_0xd718[229]];for(var _0xa4edx9=_0xa4edx2b[_0xd718[91]]- 1;_0xa4edx9>= 0;_0xa4edx9--){var _0xa4edx2c=Math[_0xd718[206]](10,(_0xa4edx9+ 1)* 3);if(_0xa4edx2c<= _0xa4edx29){_0xa4edx29= Math[_0xd718[230]](_0xa4edx29* _0xa4edx2a/ _0xa4edx2c)/ _0xa4edx2a;if((_0xa4edx29== 1000)&& (_0xa4edx9< _0xa4edx2b[_0xd718[91]]- 1)){_0xa4edx29= 1;_0xa4edx9++};_0xa4edx29+= _0xd718[231]+ _0xa4edx2b[_0xa4edx9];break}};return _0xa4edx29};$(_0xd718[241])[_0xd718[240]](_0xd718[138],_0xd718[232],function(){if(!localStorage[_0xd718[234]](_0xd718[233])){localStorage[_0xd718[235]](_0xd718[233],true);$(_0xd718[237])[_0xd718[236]]()}else {localStorage[_0xd718[238]](_0xd718[233]);$(_0xd718[237])[_0xd718[239]]()}});$(_0xd718[246])[_0xd718[240]](_0xd718[138])[_0xd718[240]](_0xd718[138],function(){if($(_0xd718[244])[_0xd718[243]](_0xd718[242])){$(_0xd718[244])[_0xd718[245]](_0xd718[242])}});GAME[_0xd718[247]]= function(_0xa4edx2d){var _0xa4edx2e=_0xd718[7];var _0xa4edx2f=false;if(_0xa4edx2d&& _0xa4edx2d[_0xd718[91]]){var _0xa4edx30=_0xa4edx2d[_0xd718[91]];for(var _0xa4edx9=0;_0xa4edx9< _0xa4edx30;_0xa4edx9++){_0xa4edx2f= true;var _0xa4edx31=_0xa4edx2d[_0xa4edx9][_0xd718[248]];if(_0xa4edx31[_0xd718[91]]> 15){_0xa4edx31= _0xa4edx31[_0xd718[249]](0,15)+ _0xd718[250]};_0xa4edx2e+= _0xd718[251]+ _0xa4edx2d[_0xa4edx9][_0xd718[252]]+ _0xd718[253]+ (_0xa4edx2d[_0xa4edx9][_0xd718[254]]== 1?3:2)+ _0xd718[255]+ _0xa4edx31+ _0xd718[256]+ this[_0xd718[258]](_0xa4edx2d[_0xa4edx9][_0xd718[257]],_0xa4edx2d[_0xa4edx9][_0xd718[252]])+ _0xd718[196]}};$(_0xd718[244])[_0xd718[101]](_0xa4edx2e);$(_0xd718[244])[_0xd718[245]](_0xd718[242]);if(window[_0xd718[259]][_0xd718[234]](_0xd718[233])){$(_0xd718[237])[_0xd718[236]]()}};GAME[_0xd718[12]](_0xd718[260])
+	$(document).bind('keydown', '0', function(){
+        if(JQS.chm.is(":focus") == false){
+          GAME.komunikat("Legenda: Klawisz 1- start/stop, 2-tp PP, 3-błogo, 4-odbieranie vip, N-zegarki, B-pvp, X-opcja dalej, zamykanie raportów/komunikatów, zbieranie" + "<br>" +" 06.01-poprawa klawisza B jak i skryptów pvp kosztem braku możliwości samodzielnego atakowania" + "<br>" + "01.01 - dodanie wojen klanowych na s19, dodanie automatycznego odbierania nagrody za coddzienne logowanie" + "<br>" +"10.12 - dalsze poprawki postępu zadań, od teraz zapamiętuje stan postępu zadań w pamięci lokalnej(po schwoaniu i zresetowaniu strony dalej będzie schowane), cofnięcie zmian na głębi" + "<br>" + "06.12 - poprawa postępu zadań, poprawki omijania fragów na głębi " + "<br>" + "04.12 - poprawiono omijanie fragów w skrypcie na planetarne ")
+        }
+        return false;
+    });
+
+GAME.emitOrder = (data) => GAME.socket.emit('ga',data);
+var tabela99=[480844];
+    var freeAssist = document.createElement('button');
+    freeAssist.innerHTML = "ASYSTUJ WSZYSTKIM ZA DARMO"
+    freeAssist.className = "newBtn option"
+
+$("[data-option='clan_assist_all']").parent().append(freeAssist)
+    freeAssist.onclick = function () { 
+      let total = $.makeArray($(".btn_small_gold.option[data-option='clan_assist']:visible"))
+      let interval = setInterval( function() {
+        let el = total.pop()
+        console.log(el)
+
+        if(!el) return clearInterval(interval)
+        GAME.emitOrder({a:39,type:55,tid:$(el).data('tid'),target:$(el).data('target')})
+      }, 50)
+    }
+$(document).bind('keydown', '3', function(){
+        if(JQS.chm.is(":focus") == false){
+			GAME.socket.emit('ga',{a:14,type:3});
+			setTimeout(() => { 
+          var arr = $.map($('.use_buff:checked'), function(e,i) {
+					return +e.value;
+				});
+var btype = $('input[name="bless_type"]:checked').val();
+GAME.socket.emit('ga',{a:14,type:5,buffs:arr,players:$('#bless_players').val(),btype:btype});
+}, 500); 
+        }
+        return false;
+    });
+	$(document).bind('keydown', '2', function(){
+        if(JQS.chm.is(":focus") == false){
+           GAME.socket.emit('ga',{a:15,type:13});
+        }
+        return false;
+    });
+ var checkkkk=true;
+	$(document).bind('keydown', '4', function(){
+        if(JQS.chm.is(":focus") == false){
+          checkkkk=true;
+		vip();
+        }
+        return false;
+    }); 
+GAME.komunikat = function(kom){
+	if(this.koms.indexOf(kom)==-1){
+		if(this.komc=30) this.komc=30;
+		var ind=this.koms.push(kom)-1;
+		JQS.kcc.append('<div class="kom" style="top:'+this.komc+'%"><div class="close_kom" data-ind="'+ind+'"><b>X</b></div><div class="content">'+kom+'</div></div>');
+		this.komc++;
+		kom_close_bind();
+	}
+}
+GAME.questAction = function(){
+    if(this.quest_action){
+         GAME.socket.emit('ga',{a:22,type:7,id:GAME.quest_action_qid,cnt:GAME.quest_action_max});
+    }
+}
+	
+
+      GAME.parseQuickOpts = function(){
+      var opts='';
+      if(this.quick_opts.tutorial){
+        this.tutorials=this.quick_opts.tutorial;
+        opts+='<img id="open_tuts" src="/gfx/layout/helper.png" class="qlink2 option" data-option="open_tuts" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab358+'</div>" />';
+        $.getJSON('/json/tutorial.json', function(json){
+          GAME.tutorial_data=json.tuts;
+          GAME.checkTutorial();
+        });
+      }
+      
+      if(this.quick_opts.private_planet) opts+='<div class="option qlink priv" data-option="private_teleport" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab138+'</div>"></div>';
+      if(this.quick_opts.teleport) opts+='<div class="option qlink tele" data-option="use_teleport" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab140+'</div>"></div>';
+      if(this.quick_opts.travel) opts+='<div class="option qlink trav" data-option="use_travel" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab141+'</div>"></div>';
+      if(this.quick_opts.ssj) opts+='<div class="option qlink ssj'+this.quick_opts.ssj[1]+'" data-option="use_transform" data-tech="'+this.quick_opts.ssj[0]+'"data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab139+'</div>"></div>';
+      if(this.quick_opts.online_reward) opts+='<div class="option qlink dail" data-option="daily_reward" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab176+'</div>"></div>';
+      if(this.quick_opts.bless) opts+='<div class="select_page qlink bles" data-page="game_buffs" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab188+'</div>"></div>';
+      if(this.quick_opts.sub&&this.quick_opts.sub.length) opts+='<div class="option qlink subs" data-option="quick_use_subs" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab189+'</div>"></div>';
+      if(this.quick_opts.senzus&&this.quick_opts.senzus.length){
+        opts+='<div class="option qlink senz" data-option="quick_use_senzu" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG.lab190+'</div>"></div>';
+      }
+      if(this.quick_opts.empire) opts+='<div class="select_page qlink emp'+this.quick_opts.empire+'" data-page="game_empire" data-toggle="tooltip" data-original-title="<div class=tt>'+LNG['empire'+this.quick_opts.empire]+'</div>"></div>';
+      opts+='<div class="clan_planet_fast option qlink priv" onClick="GAME.emitOrder({a:39,type:32});" data-toggle="tooltip" data-original-title="<div class=tt>Planeta Klanowa</div>"></div>';
+      $('#quick_bar').html(opts);
+      option_bind();
+      tooltip_bind();
+      page_bind();
+    } 
+  
+
+
+    function upgrade_item(){
+      var iid=parseInt(GAME.dragged_item.sel.data('item_id'));
+      var max=GAME.dragged_item.stack;
+      var kom;
+      if(parseInt(GAME.dragged_item.sel.data('class')) == 12) {
+        kom='<div>'+LNG.lab40+'<br /><img src="'+GAME.dragged_item.img+'" /><div class="game_input small"><input id="upg_am" type="text" value="1" /></div><button class="set_max btn_small_gold" data-target="#upg_am" data-max="'+max+'">MAX</button><br />Na jaki +<div class="game_input small"><input id="super_desired_lvl" type="text" value="1"></div></br>Ile subek<div class="game_input small"><input id="super_subs" type="text" value="1"></div><br /><button class="option btn_small_gold" onclick="upgrading('+GAME.dragged_item.sel.data('base_item_id')+')">osa :)</button></div></br>'+LNG.lab36+': <b id="upg_succes_chance">??</b>%<br />'+LNG.lab41+': <b id="upg_sub_left"></b><br /><button class="option btn_small_gold" data-option="upg2_item">OK</button></div>';
+      } else {
+        kom='<div>'+LNG.lab40+'<br /><img src="'+GAME.dragged_item.img+'" /><div class="game_input small"><input id="upg_am" type="text" value="1" /></div><button class="set_max btn_small_gold" data-target="#upg_am" data-max="'+max+'">MAX</button><br /><br />'+LNG.lab36+': <b id="upg_succes_chance">??</b>%<br />'+LNG.lab41+': <b id="upg_sub_left"></b><br /><button class="option btn_small_gold" data-option="upg2_item">OK</button></div>';
+      }
+     GAME.komunikat(kom);
+      setmaxBind()
+      option_bind();
+      GAME.emitOrder({a:12,type:9,iid:iid});
+    }
+
+    function upgrading(item_id, level, subs){
+     var level = parseInt($("#super_desired_lvl").val());
+     var subs = parseInt($("#super_subs").val());
+     var inter = setInterval(
+      function() {
+        var $el = $("[data-base_item_id=" + item_id + "]")
+        var el_id = $el.data('item_id')  
+        if($el.data('upgrade') < level & subs > 0){
+          GAME.emitOrder({a:12,type:10,iid:el_id,page:GAME.ekw_page,am:parseInt($('#upg_am').val())});
+          subs --;
+        } else {
+          clearInterval(inter)
+        }
+      }, 200)
+  }
+function kill_players1(){
+	var aaa = $("#player_list_con").find(".player button"+"[data-option=pvp_attack]"+"[data-quick=1]"+":not(.initial_hide_forced)");
+	var aaaa = parseInt(aaa.attr("data-char_id"));
+	var bbb = $("#player_list_con").find(".player button"+"[data-option=gpvp_attack]"+"[data-quick=1]"+":not(.initial_hide_forced)");
+	var bbbb = parseInt(bbb.attr("data-char_id"));
+	if($("#player_list_con").find("[data-option=load_more_players]").length==1){
+		$("#player_list_con").find("[data-option=load_more_players]").click();
+		window.setTimeout(kill_players1,100);
+	} else if (aaa.length > 0){
+		GAME.emitOrder({a:24,char_id:aaaa,quick:1});
+		window.setTimeout(kill_players1,110)
+	} else if (bbb.length > 0) {
+		GAME.emitOrder({a:24,type:1,char_id:bbbb,quick:1});
+		window.setTimeout(kill_players1,110)
+	} else{
+		kom_clear();
+	}
+}
+$(document).bind('keydown', 'b', function(){
+        if(JQS.chm.is(":focus") == false){
+           kill_players1();
+        }
+        return false;
+    });
+	
+$(document).bind('keydown', 'x', function(){
+        if(JQS.chm.is(":focus") == false){
+			var mine_id=$( "#field_opts_con" ).find("[data-option=start_mine]").attr("data-mid");
+			var quest_idd1=$( "#quest_con" ).find("[data-option=quest_duel]").attr("data-qid");
+          var quest_idd = $( "#quest_con" ).find("[data-option=finish_quest]").attr("data-qb_id");
+if($( "#quest_con" ).find("[data-option=finish_quest]").length==1){
+GAME.socket.emit('ga',{a:22,type:2,button:1,id:quest_idd});
+}
+if($( "#quest_con" ).find("[data-option=finish_quest]").prevObject[0].outerText.includes("Substancji") && $( "#quest_con" ).find("[data-option=finish_quest]").length==3){
+GAME.socket.emit('ga',{a:22,type:2,button:3,id:quest_idd});
+}
+if($( "#quest_con" ).find("[data-option=finish_quest]").prevObject[0].outerText.includes("Nuda") && $( "#quest_con" ).find("[data-option=finish_quest]").length==3){
+GAME.socket.emit('ga',{a:22,type:2,button:2,id:quest_idd});
+}
+if(mine_id){
+	GAME.socket.emit('ga',{a:22,type:8,mid:mine_id});
+}
+if(quest_idd1){
+GAME.socket.emit('ga',{a:22,type:6,id:quest_idd1});
+}
+GAME.socket.emit('ga',{a:22,type:1});
+setTimeout(() => { $('#fight_view').fadeOut(); }, 500);
+kom_clear();
+        }
+        return false;
+    }); 
+$(document).bind('keydown', 'n', function(){
+        if(JQS.chm.is(":focus") == false){
+			GAME.socket.emit('ga',{a:12,page:1,used:1}); //ŁADUJE STRONĘ EKWIPUNKU
+          kompresory();
+        }
+        return false;
+    });
+function kompresory() {
+	var kompresor_id = 	$( "#ekw_page_items" ).find("div[data-base_item_id=1618]").attr("data-item_id");
+ var quest_id = $( "#quest_con" ).find("[data-option=compress_items]").attr("data-qb_id");
+    GAME.emitOrder({
+        a: 22,
+        type: 10,
+        item_id: parseInt(kompresor_id),
+        qb_id: parseInt(quest_id)
+
+    });
+ 
+}
+GAME.getEmpDetails = function(petd){
+    if (petd.active == 1){
+    en=petd.energy;
+    id=petd.id;}
+    var res='<div class=ptt>';
+    var nextp=this.employe_exp(petd.level+1);
+	res+='<img src=/gfx/employee/'+petd.type+'.png width=100 align=left /><b>'+petd.name+'</b><br /><b>'+LNG['emptyp'+petd.type]+'</b> - <b class=item'+petd.class+'>'+LNG['item_class'+petd.class]+'</b><br />'+LNG.lab1+': <b>'+this.dots(petd.level)+'</b><br />EXP: <b>'+this.dots(petd.exp)+' / '+this.dots(nextp)+'</b><br /><br /><b class=orange>'+LNG.lab286+'</b><br />';
+	res+=LNG.lab313+': <b>'+petd.energy+'</b> / <b>'+petd.maxenergy+'</b><br />';
+	if (petd.qualified) res+='<b class=green>'+LNG.lab314+'</b><br />';
+	res+='</div>';
+	return res;
+}
+function vip(){
+	GAME.socket.emit('ga',{a:54,type:0});
+	var lvl=$( "#monthly_vip_rewards" ).find("[class='vip_cat  option']").attr("data-level");
+	var lvl1=$( "#general_vip_rewards" ).find("[class='vip_cat  option']").attr("data-level");
+	if(GAME.char_data.gvip_score>=0 && checkkkk){
+		GAME.socket.emit('ga',{a:54,type:0});
+		checkkkk=false;
+		window.setTimeout(vip,100);
+	} else if($( "#monthly_vip_rewards" ).find("[class='vip_cat  option']").length!=0){
+		GAME.socket.emit('ga',{a:54,type:1,vip:0,level:lvl});
+		window.setTimeout(vip,100);
+	} else if($( "#general_vip_rewards" ).find("[class='vip_cat  option']").length!=0){
+		GAME.socket.emit('ga',{a:54,type:1,vip:1,level:lvl1});
+		window.setTimeout(vip,100);
+	} else {
+		GAME.komunikat("Odebrano wszystkie możliwe nagrody z Vipa!!!")
+	}
+}
+$("#bless_type_2").click();
+GAME.abbreviateNumber = function(number, decPlaces=2) {
+    // 2 decimal places => 100, 3 => 1000, etc
+    decPlaces = Math.pow(10,decPlaces);
+
+    // Enumerate number abbreviations
+    var abbrev = ["K", "M", "Mld","B","Bld","T","Quad","Quin","Sext","Sep","Oct","Non","Dec","Und","Duo","Tre","Quat","Quind","Sexd","Sept","Octo","Nove","Vigi"];
+
+    // Go through the array backwards, so we do the largest first
+    for (var i=abbrev.length-1; i>=0; i--) {
+
+        // Convert array index to "1000", "1000000", etc
+        var size = Math.pow(10,(i+1)*3);
+
+        // If the number is bigger or equal do the abbreviation
+        if(size <= number) {
+             // Here, we multiply by decPlaces, round, and then divide by decPlaces.
+             // This gives us nice rounding to a particular decimal place.
+             number = Math.floor(number*decPlaces/size)/decPlaces;
+
+             // Handle special case where we round up to the next abbreviation
+             if((number == 1000) && (i < abbrev.length - 1)) {
+                 number = 1;
+                 i++;
+             }
+
+             // Add the letter for the abbreviation
+             number += ' '+abbrev[i];
+
+             // We are done... stop
+             break;
+        }
+    }
+    return number;
+}
+   $( "body" ).on( "click", "#quest_track_con", function(){
+            if (!localStorage.getItem('hide_tracker')) {
+                localStorage.setItem('hide_tracker',true);
+                $(".qtrack").hide();
+            } else {
+                localStorage.removeItem('hide_tracker');
+                $(".qtrack").show();
+            }
+        });
+$('#drag_tracker').on('click').on('click',function() {
+	if($('#drag_con').hasClass('scroll'))
+	{
+		$('#drag_con').removeClass('scroll');
+	}
+});
+GAME.parseTracker = function(track){
+	var con='';
+	var any=false;
+	if(track&&track.length){
+		var len=track.length;
+		//con+='<div class="sekcja" id="drag_tracker">'+LNG.lab181+'</div><div id="drag_con" class="scroll">';
+		for(var i=0;i<len;i++){
+			any=true;
+			var qn=track[i].header;
+			if(qn.length>15) qn=qn.slice(0,15)+'...';
+			con+='<div id="track_quest_'+track[i].qb_id+'" class="qtrack"><div class="sep'+(track[i].m==1?3:2)+'"></div><b>'+qn+'</b> '+this.quest_want(track[i].want,track[i].qb_id)+'</div>';
+		}
+	}
+	
+	//con+='</div><div class="clr"></div>';
+$('#drag_con').html(con);
+$('#drag_con').removeClass('scroll');
+    if (window.localStorage.getItem('hide_tracker')) $(".qtrack").hide();
+}
+GAME.cached_data = function(){
+	var pos=$('#char_buffs').offset();
+	pos.left-=75;
+	pos.top-=75;
+	this.char_buffs_pos=pos;
+	  if(GAME.char_id !=0 && GAME.quick_opts.online_reward){
+     setTimeout(() => {
+      GAME.socket.emit('ga',{a:26,type:1});
+      setTimeout(() => { $('#daily_reward').fadeOut(); kom_clear();  }, 200);
+       }, 1500);
+  }
+}
+GAME.parseListPlayer = function(entry,pvp_master){
+	var res='';
+	if(entry.data){
+		var pd=entry.data;
+		var qb='';
+		var klan='',erank='';
+		if(pd.klan_id){
+			var cls='';
+			if(this.clan_enemies.indexOf(pd.klan_id)!=-1) cls='enemy';
+			klan='<b class="poption player_clan '+cls+'" data-option="show_clan" data-klan_id="'+pd.klan_id+'">'+pd.klan_short+' <img src="'+pd.emblem+'" /></b>';
+		}
+		var cls='';
+		if(entry.cd){
+			qb+=this.showTimer(entry.cd-this.getTime(),'data-special="10" data-pd="'+pd.id+'"',' playercd'+pd.id+'');
+			cls='initial_hide_forced playericons'+pd.id;
+		}
+		if(pd.empire){
+			var cls2='';
+			if(this.emp_enemies.indexOf(pd.empire)!=-1){
+				if(this.emp_enemies_t[pd.empire]==1) cls2='war';
+				else if(this.empire_locations.indexOf(this.char_data.loc)!=-1) cls2='war';
+			}
+			if(!pd.glory_rank) pd.glory_rank=1;
+			erank='<img src="/gfx/empire/ranks/'+pd.empire+'/'+pd.glory_rank+'.png" class="glory_rank '+cls2+'" />';
+		}
+		qb+='<button class="poption map_bicon '+cls+'" data-option="pvp_attack" data-char_id="'+pd.id+'"><i class="ca"></i></button>';
+		if(pvp_master) qb+='<button class="poption map_bicon '+cls+'" data-option="pvp_attack" data-char_id="'+pd.id+'" data-quick="1"><i class="qa"></i></button>';
+		res+='<div class="player"><div class="belka">'+erank+'<strong class="player_rank'+pd.ranga+' poption" data-option="show_player" data-char_id="'+pd.id+'">'+pd.name+'</strong> <span>'+this.rebPref(pd.reborn)+pd.level+'</span> '+klan+'</div><div id="pvp_opts_'+pd.id+'" class="right_btns">'+qb+'</div></div>';
+	}
+	else if(entry.more){
+		res+='<div class="more_players"><button class="poption" data-option="load_more_players" data-start_from="'+entry.next_from+'">+'+entry.more+'</button></div>';
+	}
+	return res;
+}
+GAME.parsePlayerShadow = function(data,pvp_master){
+	var entry=data.data;
+	var res='';
+	if(entry.data){
+		var pd=entry.data;
+		pd.empire=entry.empire;
+		var qb='';
+		var erank='';
+		var cls='';
+		if(data.cd){
+			qb+=this.showTimer(data.cd-this.getTime(),'data-special="10" data-pd="'+pd.id+'"',' playercd'+pd.id+'');
+			cls='initial_hide_forced playericons'+pd.id;
+		}
+		if(pd.empire){
+			var cls2='';
+			if(this.emp_enemies.indexOf(pd.empire)!=-1){
+				if(this.emp_enemies_t[pd.empire]==1) cls2='war';
+				else if(this.empire_locations.indexOf(this.char_data.loc)!=-1) cls2='war';
+			}
+			if(!pd.glory_rank) pd.glory_rank=1;
+			erank='<img src="/gfx/empire/ranks/'+pd.empire+'/'+pd.glory_rank+'.png" class="glory_rank '+cls2+'" />';
+		}
+		qb+='<button class="poption map_bicon '+cls+'" data-option="gpvp_attack" data-char_id="'+pd.id+'"><i class="ca"></i></button>';
+		if(pvp_master) qb+='<button class="poption map_bicon '+cls+'" data-option="gpvp_attack" data-char_id="'+pd.id+'" data-quick="1"><i class="qa"></i></button>';
+		res+='<div class="player"><div class="belka">'+erank+'<strong class="player_rank'+pd.ranga+' poption" data-option="show_player" data-char_id="'+pd.id+'">'+pd.name+' - '+LNG.lab348+'</strong> <span>'+this.rebPref(pd.reborn)+pd.level+'</span> </div><div id="gpvp_opts_'+pd.id+'" class="right_btns">'+qb+'</div></div>';
+	}
+	else if(entry.more){
+		res+='<div class="more_players"><button class="poption" data-option="load_more_players" data-start_from="'+entry.next_from+'">+'+entry.more+'</button></div>';
+	}
+	return res;
+}
+GAME.komunikat("Od teraz lista zmian pod klawiszem 0" + "<br>" + "Ręczne atakowanie nie działa, od tego jest klawisz B")
