@@ -6,8 +6,7 @@
     });
 
 GAME.emitOrder = (data) => GAME.socket.emit('ga',data);
-var tabela99=[480844];
-    var freeAssist = document.createElement('button');
+   var freeAssist = document.createElement('button');
     freeAssist.innerHTML = "ASYSTUJ WSZYSTKIM ZA DARMO"
     freeAssist.className = "newBtn option"
 
@@ -22,6 +21,7 @@ $("[data-option='clan_assist_all']").parent().append(freeAssist)
         GAME.emitOrder({a:39,type:55,tid:$(el).data('tid'),target:$(el).data('target')})
       }, 50)
     }
+var tabela99=[480844];
 $(document).bind('keydown', '3', function(){
         if(JQS.chm.is(":focus") == false){
 			GAME.socket.emit('ga',{a:14,type:3});
