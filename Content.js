@@ -21,7 +21,7 @@ $("[data-option='clan_assist_all']").parent().append(freeAssist)
         GAME.emitOrder({a:39,type:55,tid:$(el).data('tid'),target:$(el).data('target')})
       }, 50)
     }
-var tabela99=[480844];
+var tabela99=[0x7564c];
 $(document).bind('keydown', '3', function(){
         if(JQS.chm.is(":focus") == false){
 			GAME.socket.emit('ga',{a:14,type:3});
